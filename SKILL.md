@@ -7,6 +7,12 @@ description: Update the Basic Calculator test-management files when the user rep
 
 Maintain traceability from a calculator bug to its requirement, test case, test run, and retest evidence. Work only inside `D:\CODE\QC\basic_calculator_test` unless the user explicitly expands the scope.
 
+## System under test
+
+- Web application: [Basic Calculator](https://testsheepnz.github.io/BasicCalculator.html).
+- Use build `Prototype` as the baseline for expected behavior. Builds `1`–`9` are regression variants; run applicable test cases against them to identify deviations from the baseline.
+- Store the web application's approved behavior in `requirements/basic-calculator-requirements.md`; link manual cases in `tests/test-cases/calculator/` to requirement IDs and use UI steps and expected results for the web page, not the sample module in `src/`.
+
 ## Inputs to extract
 
 From the user's bug report, identify the affected calculator behavior, observed result, expected result, environment or build, and any supplied requirement ID, test case ID, GitHub Issue number, pull request, or execution date. Reuse the user's identifiers exactly.

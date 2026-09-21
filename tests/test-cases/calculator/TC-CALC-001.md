@@ -1,35 +1,36 @@
-# TC-CALC-001: Cộng hai số hợp lệ
+# TC-CALC-001 — Cộng hai số hợp lệ
+
+## ID
+
+`TC-CALC-001`
+
+## Objective
+
+Xác nhận phép Add tính tổng của hai toán hạng hiện tại.
 
 ## Requirement ID
 
-FR-CALC-01
+FR-CALC-001, FR-CALC-002
 
-## Module / Test type / Technique
+## Precondition
 
-Calculator / Functional / Equivalence Partitioning
-
-## Preconditions
-
-- Calculator đã sẵn sàng để nhận hai toán hạng số.
-- Người dùng chọn phép cộng.
+- Mở [Basic Calculator](https://testsheepnz.github.io/BasicCalculator.html).
+- Chọn `Prototype` cho lần chạy baseline hoặc build mục tiêu khi chạy regression.
+- Form tính toán hiển thị và đang thao tác được.
 
 ## Test data
 
-| Operand 1 | Operand 2 |
-| --- | --- |
-| 12 | 8 |
+| First number | Operation | Second number | Expected answer |
+| --- | --- | --- | --- |
+| `12` | Add | `8` | `20` |
 
-## Test steps
+## Steps
 
-1. Nhập `12` làm toán hạng thứ nhất.
-2. Chọn phép cộng.
-3. Nhập `8` làm toán hạng thứ hai.
-4. Thực thi phép tính.
+1. Nhập `12` vào First number.
+2. Nhập `8` vào Second number.
+3. Chọn Add.
+4. Nhấn Calculate.
 
 ## Expected result
 
-Hệ thống trả về kết quả `20`.
-
-## Status / Related bugs
-
-Not Run / None
+Answer hiển thị `20` và không có thông báo lỗi.
