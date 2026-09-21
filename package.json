@@ -1,0 +1,12 @@
+{
+  "name": "basic-calculator-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sample test management structure for a basic calculator",
+  "scripts": {
+    "test": "node --test tests/automated/calculator.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
